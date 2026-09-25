@@ -1,15 +1,39 @@
+:root{
+    --police-titre:georgia;
+    --police-txt:Verdana;
+    --color-main:#2c3682;
+    --color-second-ico:#f36c3f; /*icone uniquement*/
+    --color-second-acc:#c94a28; /*bouton text*/
+    --color-serv:#f0b74b; /*texte sombre*/
+    --color-pop:#386d72;
+    --color-bg:#fefefe;
+    --color-txt:#121314;
+}
 .color-preview{
     width: 120px;
     height: 120px;
-    background:#2563eb ;
+    background:var(--color-main) ;
+    color: var(--color-bg);
+    text-align: center;
+    align-content: center;
 }
-.couleurs{
+#couleurs{
     display: flex;
 align-content: space-around;
+gap: 10px;
     
-
 }
 .color-card{
     width: 130px;
 flex: 1;
+}
+#logoTeam{
+    width: 120px;
+    height: 100px;
+}
+.text-courant{
+    font-family:var(--police);
+}
+.txt-titre{
+    font-family: var(--police-titre);
 }
