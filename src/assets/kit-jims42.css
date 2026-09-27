@@ -12,10 +12,28 @@
 .color-preview{
     width: 120px;
     height: 120px;
-    background:var(--color-main) ;
-    color: var(--color-bg);
     text-align: center;
     align-content: center;
+}
+.color-card:nth-child(1) .color-preview{
+background:var(--color-main) ;
+    color: var(--color-bg);
+}
+.color-card:nth-child(2) .color-preview{
+    background:var(--color-second-ico);
+    color: var(--color-bg);
+}
+.color-card:nth-child(3) .color-preview{
+background:var(--color-second-acc) ;
+    color: var(--color-bg);
+}
+.color-card:nth-child(4) .color-preview{
+    background:var(--color-serv) ;
+    color: var(--color-bg);
+}
+.color-card:nth-child(5) .color-preview{
+    background:var(--color-pop) ;
+    color: var(--color-bg);
 }
 #couleurs{
     display: flex;
