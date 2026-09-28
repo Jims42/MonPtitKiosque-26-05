@@ -15,31 +15,35 @@
     text-align: center;
     align-content: center;
 }
-.color-card:nth-child(1) .color-preview{
+.color-card:nth-child(2) .color-preview{
 background:var(--color-main) ;
     color: var(--color-bg);
 }
-.color-card:nth-child(2) .color-preview{
+.color-card:nth-child(3) .color-preview{
     background:var(--color-second-ico);
     color: var(--color-bg);
 }
-.color-card:nth-child(3) .color-preview{
+.color-card:nth-child(4) .color-preview{
 background:var(--color-second-acc) ;
     color: var(--color-bg);
 }
-.color-card:nth-child(4) .color-preview{
+.color-card:nth-child(5) .color-preview{
     background:var(--color-serv) ;
     color: var(--color-bg);
 }
-.color-card:nth-child(5) .color-preview{
+.color-card:nth-child(6) .color-preview{
     background:var(--color-pop) ;
     color: var(--color-bg);
 }
 #couleurs{
     display: flex;
-align-content: space-around;
-gap: 10px;
-    
+    flex-wrap: wrap;
+justify-content: space-around;
+gap: 10px;   
+}
+#color-titre{
+    width: 100%;
+    text-transform: uppercase;
 }
 .color-card{
     width: 130px;
@@ -49,9 +53,69 @@ flex: 1;
     width: 120px;
     height: 100px;
 }
-.text-courant{
-    font-family:var(--police);
+#typographies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around ;
+    gap: 10px;
 }
-.txt-titre{
+#typo-titre{
+    width: 100%;
+    text-transform: uppercase;
+}
+.typo-card{
+    width: 200px;
+    height: 300px;
+    border: 1px solid var(--color-txt);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+.typo .typo-card:nth-child(2){
     font-family: var(--police-titre);
+}
+.typo .typo-card:nth-child(3){
+    font-family: var(--police-txt);
+}
+.typo__def{
+    width: 100%;
+border-top: 1px solid var(--color-txt);
+text-align: center;
+}
+
+/* COMPOSANT */
+
+.comp-card{
+    width: 66px;
+    height: 80px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+   background-color: var(--color-bg);
+    
+}
+.nav__cat,
+.nav__cat-click{
+    text-decoration: none;
+    color: var(--color-txt);
+}
+.comp-card-click{
+    width: 66px;
+    height: 80px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    background-color: var(--color-second-acc);
+    border: 1px solid var(--color-serv);
+}
+.nav__cat-click {
+color: var(--color-bg);
+}
+.iconnn{
+    color: var(--color-bg);
+}
+.fond{
+    background-color: #a8a8a8;
 }
