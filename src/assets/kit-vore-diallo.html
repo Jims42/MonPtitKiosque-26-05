@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kit graphique - MonPetitKiosque</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="kit-vore-monpetitkiosque.css">
+</head>
+<body class="dark">
+  <header>
+    <div class="brand">
+      
+      <img src="img/logo.svg" alt="Logo du projet MonPetitKiosque">
+      <div class="brand-text">
+        <h1>Kit graphique - MonPetitKiosque</h1>
+        <p>Page de référence de l'identité visuelle du projet numérique.</p>
+      </div>
+    </div>
+  </header>
+
+  <nav aria-label="Navigation principale du kit graphique">
+    <ul>
+      <li><a href="#palette">Palette de couleurs</a></li>
+      <li><a href="#typographie">Typographie</a></li>
+      <li><a href="#composants">Boutons & composants</a></li>
+      <li><a href="#icones">Icônes & visuels</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    
+    <section id="palette">
+      <h2>Palette de couleurs</h2>
+      <p>Palette principale utilisée pour le projet.</p>
+
+      <div class="grid">
+        
+        <article class="color-card">
+          <div class="color-preview color-primary"></div>
+          <h3>Bleu principal</h3>
+          <p>HEX : #2563EB</p>
+          <p>RGB : 37, 99, 235</p>
+          <p>Usage : boutons principaux, liens importants, éléments d'action.</p>
+        </article>
+
+        
+        <article class="color-card">
+          <div class="color-preview color-secondary-1"></div>
+          <h3>Gris foncé</h3>
+          <p>HEX : #111827</p>
+          <p>RGB : 17, 24, 39</p>
+          <p>Usage : texte principal, titres, icônes.</p>
+        </article>
+
+        
+        <article class="color-card">
+          <div class="color-preview color-secondary-2"></div>
+          <h3>Gris clair</h3>
+          <p>HEX : #E5E7EB</p>
+          <p>RGB : 229, 231, 235</p>
+          <p>Usage : arrière-plans, séparateurs, cartes.</p>
+        </article>
+
+        
+        <article class="color-card">
+          <div class="color-preview color-accent"></div>
+          <h3>Orange accent</h3>
+          <p>HEX : #F97316</p>
+          <p>RGB : 249, 115, 22</p>
+          <p>Usage : alertes, notifications, éléments mis en avant.</p>
+        </article>
+      </div>
+    </section>
+
+    
+    <section id="typographie">
+      <h2>Typographie</h2>
+
+      <article>
+        <h3>Police principale : "Inter", sans-serif</h3>
+        <p>Usage : texte courant, formulaires, descriptions.</p>
+        <p class="sample-body">
+          Exemple de texte courant pour le projet de Mamadou. Ce texte illustre la lisibilité et le contraste.
+        </p>
+      </article>
+
+      <article>
+        <h3>Police titres : "Poppins", sans-serif</h3>
+        <p>Usage : titres de pages, sections, boutons importants.</p>
+        <p class="sample-heading">
+          Exemple de titre principal du projet numérique.
+        </p>
+      </article>
+    </section>
+
+    
+    <section id="composants">
+      <h2>Boutons & composants</h2>
+
+      <div class="grid">
+        
+        <article class="component-card">
+          <h3>Bouton principal</h3>
+          <button class="btn btn-primary">Valider</button>
+          <p>Usage : actions principales (envoyer, valider, confirmer).</p>
+        </article>
+
+        
+        <article class="component-card">
+          <h3>Bouton secondaire</h3>
+          <button class="btn btn-secondary">Annuler</button>
+          <p>Usage : actions secondaires (retour, annuler, options).</p>
+        </article>
+
+        
+        <article class="component-card">
+          <h3>Bouton désactivé</h3>
+          <button class="btn btn-disabled" disabled>Indisponible</button>
+          <p>Usage : actions non disponibles ou conditions non remplies.</p>
+        </article>
+
+        
+        <article class="component-card">
+          <h3>Champ de formulaire</h3>
+          <form>
+            <label for="email">Adresse e-mail</label>
+            <input id="email" type="email" placeholder="maydiallo78@gmai.com">
+          </form>
+          <p>Usage : formulaires de contact, inscription, connexion.</p>
+        </article>
+
+        
+        <article class="component-card">
+          <h3>Carte de contenu</h3>
+          <div class="card">
+            <h4>Titre de la carte</h4>
+            <p>Texte de description d'un élément du projet (produit, fonctionnalité, section).</p>
+            <button class="btn btn-primary">En savoir plus</button>
+          </div>
+          <p>Usage : présentation de blocs d'information ou de fonctionnalités.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. Icônes et visuels -->
+    <section id="icones">
+      <h2>Icônes & visuels</h2>
+      <p>Icônes principales utilisées dans le projet.</p>
+
+      <div class="grid">
+        <article class="icon-card">
+          <h3>Icône accueil</h3>
+          <div class="icon-preview" aria-hidden="true">🏠</div>
+          <p>Usage : lien vers la page d'accueil.</p>
+        </article>
+
+        <article class="icon-card">
+          <h3>Icône utilisateur</h3>
+          <div class="icon-preview" aria-hidden="true">👤</div>
+          <p>Usage : profil, connexion, espace personnel.</p>
+        </article>
+
+        <article class="icon-card">
+          <h3>Icône paramètres</h3>
+          <div class="icon-preview" aria-hidden="true">⚙️</div>
+          <p>Usage : configuration, préférences, options avancées.</p>
+        </article>
+
+        <article class="icon-card">
+          <h3>Icône aide</h3>
+          <div class="icon-preview" aria-hidden="true">❓</div>
+          <p>Usage : FAQ, support, documentation.</p>
+        </article>
+      </div>
+
+      <h3>Règles d'utilisation</h3>
+      <ul>
+        <li>Utiliser des icônes simples et compréhensibles.</li>
+        <li>Maintenir un bon contraste avec le fond.</li>
+        <li>Limiter le nombre d'icônes pour éviter la surcharge visuelle.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projet Mamadou - Page de kit graphique</p>
+  </footer>
+</body>
+</html>
