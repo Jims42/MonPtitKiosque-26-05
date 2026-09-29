@@ -122,22 +122,25 @@ section h2 {
   height: 80px;
   border-radius: var(--radius-sm);
   margin-bottom: 0.75rem;
+  justify-items: center;
 }
 
 /* Couleurs */
-.crm-primary { background: var(--crm-primary); }
-.crm-secondary { background: var(--crm-secondary); }
-.crm-secondary-accessible { background: var(--crm-secondary-accessible); }
+.crm-primary { background: var(--crm-primary); color: var(--body-bg) }
+.crm-secondary { background: var(--crm-secondary); color: white; center}
+.crm-secondary-accessible { background: var(--crm-secondary-accessible); color : white; center; }
 .crm-accent { background: var(--crm-services); }
-.crm-mecenat { background: var(--crm-mecenat); }
-.body-bg { background: var(--body-bg); border: 1px solid #eee; }
-.body-cl { background: var(--body-cl); }
+.crm-mecenat { background: var(--crm-mecenat);color:white;center }
+.body-bg { background: var(--body-bg); border: 10% solid #eee; color:black; center;}
+.body-cl { background: var(--body-cl); color: #ffffff; }
+
 
 /* Typographies */
 .typo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
+  justify-items: center;
 }
 
 .typo-card {
@@ -145,6 +148,7 @@ section h2 {
   border-radius: var(--radius-md);
   padding: 1rem;
   box-shadow: var(--shadow-card);
+  
 }
 
 .typo-title-example {
