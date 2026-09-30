@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
+<!-- saved from url=(0060)http://127.0.0.1:5500/src/assets/kit-vore-diallo.html#icones -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kit Graphique - MonPetitKiosque</title>
-  <link rel="stylesheet" href="kit-vore-monpetitkiosque.css">
-</head>
+  
+<link rel="stylesheet" href="./Kit Graphique - MonPetitKiosque_files/kit-vore-monpetitkiosque.css"></head>
 <body>
 <header>
   <div class="brand">
-    <img src="img/logo.svg" alt="Logo du projet MonPetitKiosque">
+    <img src="./Kit Graphique - MonPetitKiosque_files/logo.svg" alt="Logo du projet MonPetitKiosque">
     <div>
       <h1>Kit Graphique - MonPetitKiosque</h1>
       <p>Référence visuelle du site marchand MonPetitKiosque (kiosque + casiers automatiques).</p>
@@ -17,10 +17,10 @@
   </div>
   <nav aria-label="Navigation principale">
     <ul>
-      <li><a href="#couleurs">Palette de couleurs</a></li>
-      <li><a href="#typographies">Typographies</a></li>
-      <li><a href="#composants">Boutons & composants</a></li>
-      <li><a href="#icones">Icônes & visuels</a></li>
+      <li><a href="http://127.0.0.1:5500/src/assets/kit-vore-diallo.html#couleurs">Palette de couleurs</a></li>
+      <li><a href="http://127.0.0.1:5500/src/assets/kit-vore-diallo.html#typographies">Typographies</a></li>
+      <li><a href="http://127.0.0.1:5500/src/assets/kit-vore-diallo.html#composants">Boutons &amp; composants</a></li>
+      <li><a href="http://127.0.0.1:5500/src/assets/kit-vore-diallo.html#icones">Icônes &amp; visuels</a></li>
     </ul>
   </nav>
 </header>
@@ -72,7 +72,7 @@
        
         
       </article>
-    </div>
+    </article></div>
   </section>
 
   
@@ -113,7 +113,7 @@
 
   
   <section id="composants" aria-labelledby="composants-title">
-    <h2 id="composants-title">Boutons & composants</h2>
+    <h2 id="composants-title">Boutons &amp; composants</h2>
 
     <div class="components-grid">
       <article class="component-card">
@@ -121,7 +121,7 @@
         <button class="btn btn-primary">Commander</button>
         <button class="btn btn-secondary">Voir ma commande</button>
         <button class="btn btn-accent">Besoin d'aide ?</button>
-        <button class="btn btn-disabled" disabled>Bouton désactivé</button>
+        <button class="btn btn-disabled" disabled="">Bouton désactivé</button>
       </article>
 
       <article class="component-card">
@@ -162,7 +162,7 @@
 
   
   <section id="icones" aria-labelledby="icones-title">
-    <h2 id="icones-title">Icônes & visuels</h2>
+    <h2 id="icones-title">Icônes &amp; visuels</h2>
     <p>Icônes simples, lisibles et cohérentes. Utiliser un contraste suffisant et une taille minimale pour garantir une bonne accessibilité.</p>
 
     <div class="icons-grid">
@@ -223,5 +223,44 @@
 <footer>
   <p>MonPetitKiosque - Équipe de développement DWWM</p>
 </footer>
-</body>
-</html>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
