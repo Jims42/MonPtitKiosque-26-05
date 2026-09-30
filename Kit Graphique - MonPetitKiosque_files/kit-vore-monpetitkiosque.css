@@ -11,7 +11,6 @@
   --radius-sm: 6px;
   --radius-md: 10px;
   --shadow-card: 0 2px 6px rgba(0, 0, 0, 0.08);
-  font-family: verdana georgia;
 }
 
 /* Base */
@@ -128,11 +127,11 @@ section h2 {
 
 /* Couleurs */
 .crm-primary { background: var(--crm-primary); color: var(--body-bg) }
-.crm-secondary { background: var(--crm-secondary); color: white; }
-.crm-secondary-accessible { background: var(--crm-secondary-accessible); color : white;  }
+.crm-secondary { background: var(--crm-secondary); color: white; center}
+.crm-secondary-accessible { background: var(--crm-secondary-accessible); color : white; center; }
 .crm-accent { background: var(--crm-services); }
-.crm-mecenat { background: var(--crm-mecenat);color:white; }
-.body-bg { background: var(--body-bg); border: 10% solid #eee; color:black; }
+.crm-mecenat { background: var(--crm-mecenat);color:white;center }
+.body-bg { background: var(--body-bg); border: 10% solid #eee; color:black; center;}
 .body-cl { background: var(--body-cl); color: #ffffff; }
 
 
@@ -142,7 +141,7 @@ section h2 {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
   justify-items: center;
-  font-family: poppins sans-serif; width: 100%;
+  font-family: poppins; sans-serif; width: 100%;
 }
 
 .typo-card {
@@ -353,7 +352,7 @@ input[type="email"] {
   border-left: 4px solid var(--crm-primary);
 }
 body{
-   font-family: OpenDyslexic arial sans-serif;
+   font-family: OpenDyslexic; arial; snas-serif ;
 }
 
 
