@@ -114,11 +114,13 @@ header{
 .typo-card {
   border: 1px solid var(--color-txt);
   display: flex;
+  flex-direction: column;
   flex: 1;
   justify-content: space-around;
   align-items: center;
   padding: 5px;
 }
+
 .typo-card__titre.geortitre {
   font-family: var(--police-titre);
 }
