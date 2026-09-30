@@ -8,11 +8,11 @@
   </head>
   <body>
     <header>
-      <img src="img/logo.svg" alt="Logo du projet" />
+      <img class="logo" src="img/logo.svg" alt="Logo du projet" />
       <h1>Mon petit kiosque</h1>
-      <p>
-        Intégration de services de retrait de marchandises
-        <time datetime="24/24">34/24</time> et
+      <p class="jstif">
+        Intégration de services de <strong>retrait de marchandises</strong>
+        <time datetime="24/24">24/24</time> et
         <time datetime="7/7">7/7</time> en click &amp; collect. Création de
         comptes, base de données pour personnels, stagiaires et patients.
       </p>
@@ -22,6 +22,16 @@
       
       <section id="couleurs">
         <h2 id="color-titre">Palette de couleurs</h2>
+        <div class="fond">
+          <div class="block-color principal">couleur principal</div>
+          <div class="block-color secondaire-ico">couleur secondaire-icon</div>
+          <div class="block-color secondaire-acc">couleurs secondaire-bouton/texte</div>
+          <div class="block-color service">couleurs com</div>
+          <div class="block-color pop">couleur pop-up</div>
+        </div>
+
+         <div class="fond">
+
         <div class="color-card">
           <div class="color-preview">
             <p>couleur principal <data value="2c3682"> #2c3682</data></p>
@@ -51,47 +61,79 @@
           <div class="color-preview">
             <p>couuleur pop-up <data value="386d72">#386d72</data> </p></div>
         </div>
-        
+        </div>
       </section>
 
       <section id="typographies" class="typo">
+       
         <h2 id="typo-titre">Typographies</h2>
+
+         <div class="fond">
+
         <article class="typo-card">
-        <h3 class="txt-titre">georgia</h3>
-        <p class="text-courant">
-          <strong> texte courant :</strong> Récupérez votre commandes n'importe
+        <h3 class="typo-card__titre geortitre">georgia</h3>
+        <p class="typo-card__text geortext">
+          <strong> commander :</strong> Récupérez votre commandes n'importe
           quand et à n'importe quelle heure !
         </p>
         <p class="typo__def">Titre</p>
         </article>
 
         <article class="typo-card">
-        <h3 class="txt-titre">Verdana</h3>
-        <p class="text-courant">
+        <h3 class="typo-card__titre verdtitre">Verdana</h3>
+        <p class="typo-card__text verdtext">
           <strong>texte courant :</strong> Récupérez votre commandes n'importe
           quand et à n'importe quelle heure !
         </p>
         <p class="typo__def">Texte et bouton</p>
         </article>
 
-
+</div>
       </section>
 
-      /* COMPOSAT */
+      <!--  COMPOSANTS  -->
 
       <section id="composants">
+        <section class="composants">
+        <h3 class="comp-titre">Composant categorie</h3>
         <div class="fond">
         <article class="comp-card">
           <a class="nav__cat" href="livre"><img src="img/livre-Icon.svg" alt="icon livre">Livres</a>
         </article>
-      <
-       
         <article class="comp-card-click">
-          <a class="nav__cat-click" href="livre"><img class="iconn" src="img/livre-Icon-b.svg" alt="icon livre">Livres</a>
-          
+          <a class="nav__cat-click" href="livre"><img class="iconn" src="img/livre-Icon-b.svg" alt="icon livre">Livres</a>   
         </article>
+      </div>
+    </section>
+    <section class="composants">
+      <h3 class="comp-titre">card produit</h3>
+      <div class="fond">
+        <article class="card-produit">
+        <img class="img-produit" src="img/savon.jpg" alt="image du produit savon">
+        <a class="titre-produit" href="produit"><h4 class="titre-items" >Savon de Marseille - vert</h4></a>
+        <p class="prix-produit" ><data class="prix" value="8.55">8,55 €</data></p>
+        <a class="ajout-panier" href="#"><img src="img/ajout-pagnierr.svg" alt="icon panier"> Ajouter</a>
+        <p class="info-dispo">disponible</p>
+      </article>
+      <article class="card-produit card-produit-faible">
+        <img class="img-produit" src="img/savon.jpg" alt="image du produit savon">
+        <a class="titre-produit" href="produit"><h4 class="titre-items" >Savon de Marseille - vert</h4></a>
+        <p class="prix-produit" ><data class="prix" value="8.55">8,55 €</data></p>
+        <a class="ajout-panier" href="#"><img src="img/ajout-pagnierr.svg" alt="icon panier"> Ajouter</a>
+        <p class="info-dispo">dernier article</p>
+      </article>
+
+      <article class="card-produit card-produit-rupture">
+        <img class="img-produit" src="img/savon.jpg" alt="image du produit savon">
+        <a class="titre-produit" href="produit"><h4 class="titre-items" >Savon de Marseille - vert</h4></a>
+        <p class="prix-produit" ><data class="prix" value="8.55">8,55 €</data></p>
+        <a class="ajout-panier" href="#"><img src="img/rupture-Icon.svg" alt="icon panier"> épuisé</a>
+        <p class="info-dispo">En rupture</p>
+      </article>
+
 
       </div>
+    </section>
 
       </section>
 
