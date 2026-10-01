@@ -19,10 +19,57 @@ body {
   padding:5px;
   margin: 5px;
   font-family: var(--police-txt);
+  
+}
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 30px;
 }
 h1,h2,h3,h4,h5 .titre{
   font-family: var(--police-titre);
   text-transform: uppercase;
+}
+#color-titre, #typo-titre,.composant-titre, .comp-titre {
+  width: 100%; 
+  font-family: var(--police-titre);
+}
+.couleur, .typo, .composants {
+  flex-direction: column;
+  gap: 20px;
+  border: 3px solid var(--color-second-acc);
+  padding: 30px;
+}
+.fond {
+    display: flex;
+    flex-wrap: wrap;
+  background-color: #a8a8a8;
+  padding: 5px;
+  gap: 30px;
+}
+
+ /* HEADER */
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.justif{
+  text-align: justify;
+}
+.logo{
+  width: 70px;
+}
+
+/* COULEURS */
+
+ .couleur .fond{
+  flex-wrap: wrap;
+  gap: 15px;
 }
 .block-color{
   padding: 0.8rem 1.2rem;
@@ -48,23 +95,15 @@ h1,h2,h3,h4,h5 .titre{
   background-color: var(--color-pop);
   color: var(--color-bg);
 }
-header{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-.justif{
-  text-align: justify;
-}
-.logo{
-  width: 70px;
-}
+
 .color-preview {
-  width: 120px;
-  height: 120px;
+  min-width: 180px;
+  min-height:180px;
+  margin: 15px;
   text-align: center;
   align-content: center;
+  
+
 }
 .color-card:nth-child(1) .color-preview {
   background: var(--color-main);
@@ -86,29 +125,31 @@ header{
   background: var(--color-pop);
   color: var(--color-bg);
 }
-#couleurs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
+
+.couleur section{
+ 
+  padding: 20px;
+  gap: 15px;
 }
-#color-titre, #typo-titre,#composants, .comp-titre {
-  width: 100%;
-  
-  font-family: var(--police-titre);
-}
+
+
 .color-card {
-  max-width: 130px;
+width: 100px;
   flex: 1;
+  
 }
-#logoTeam {
-  width: 120px;
-  height: 100px;
-}
+
+/* TYPOGRAPHIE */
+
 #typographies {
   display: flex;
   flex-wrap: wrap;
  
   gap: 10px;
+}
+.typo .fond {
+  
+  
 }
 
 .typo-card {
@@ -136,53 +177,67 @@ header{
   text-align: center;
 }
 
+/* FOOTER */
+
+#logoTeam {
+  width: 120px;
+  height: 100px;
+}
+
+
 /* COMPOSANT */
 
+.composants  h2{
+  width: 100%;
+}
+.composants section{
+     padding: 30px;
+  gap: 15px;;
+}
+.comp-groupe{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.fond.cat{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
 .comp-card {
-  width: 66px;
+  width: 70px;
   height: 80px;
   text-align: center;
   align-content: center;
-  border-radius: 10px;
+  border-radius: var(--bordure-rond);
   background-color: var(--color-bg);
+
+}
+.comp-card.click {
+  background-color: var(--color-second-acc);
+  border: 1px solid var(--color-serv);
 }
 .nav__cat,
 .nav__cat-click {
   text-decoration: none;
   color: var(--color-txt);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
 }
-.comp-card-click {
-  width: 66px;
-  height: 80px;
-  text-align: center;
-  align-content: center;
-  border-radius: 10px;
-  background-color: var(--color-second-acc);
-  border: 1px solid var(--color-serv);
+.nav__cat img {
+  height: 30px;
 }
 .nav__cat-click {
   color: var(--color-bg);
 }
-.iconnn {
-  color: var(--color-bg);
-}
-.fond {
-    display: flex;
-    flex-wrap: wrap;
-  background-color: #a8a8a8;
-  padding: 5px;
-  gap: 5px;
-}
- #couleurs .fond{
-  flex-wrap: wrap;
-}
 .composants{
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-
-
-
 .card-produit {
   width: 140px;
   border-radius: 10px;

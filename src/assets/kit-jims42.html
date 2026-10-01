@@ -20,8 +20,9 @@
     <nav></nav>
     <main>
       
-      <section id="couleurs">
+      <section id="couleurs" class="couleur">
         <h2 id="color-titre">Palette de couleurs</h2>
+        <section>
         <div class="fond">
           <div class="block-color principal">couleur principal</div>
           <div class="block-color secondaire-ico">couleur secondaire-icon</div>
@@ -29,7 +30,8 @@
           <div class="block-color service">couleurs com</div>
           <div class="block-color pop">couleur pop-up</div>
         </div>
-
+        </section>
+<section>
          <div class="fond">
 
         <div class="color-card">
@@ -63,7 +65,7 @@
         </div>
         </div>
       </section>
-
+</section>
       <!-- TYPOGRAPHIE -->
 
       <section id="typographies" class="typo">
@@ -100,19 +102,64 @@
 
       <!--  COMPOSANTS  -->
 
-      <section id="composants">
-        <section class="composants">
-        <h3 class="comp-titre">Composant categorie</h3>
-        <div class="fond">
+      <section id="composants" class="composants">
+        <h2 id="composant-titre">composants</h2>
+        
+        <!-- COMPOSANT NAV -->
+
+
+        <section >
+        <h3 class="comp-titre">Composant nav</h3>
+        <div class="fond cat">
+          <div class="comp-groupe">
+            <h4>Icon par defaut</h4>
         <article class="comp-card">
           <a class="nav__cat" href="livre"><img src="img/livre-Icon.svg" alt="icon livre">Livres</a>
         </article>
-        <article class="comp-card-click">
+        <article class="comp-card">
+          <a class="nav__cat" href="hygiene"><img src="img/hygiene-Icon.svg" alt="icon Hygiène">Hygiène</a>
+        </article>
+        <article class="comp-card">
+          <a class="nav__cat" href="snack"><img src="img/snack-Icon.svg" alt="icon snack">Snack</a>
+        </article>
+        <article class="comp-card">
+          <a class="nav__cat" href="acc"><img src="img/acc-Icon.svg" alt="icon Accéssoire">Acc.</a>
+        </article>
+        <article class="comp-card">
+          <a class="nav__cat" href="sante"><img src="img/medical-Icon.svg" alt="icon médicale">Santé</a>
+        </article>
+        <article class="comp-card">
+          <a class="nav__cat" href="divers"><img src="img/diver-Icon.svg" alt="icon divers">Divers</a>
+        </article>
+        </div>
+
+        <div class="comp-groupe">
+          <h4>Icon après click</h4>
+        <article class="comp-card click">
           <a class="nav__cat-click" href="livre"><img class="iconn" src="img/livre-Icon-b.svg" alt="icon livre">Livres</a>   
         </article>
+        <article class="comp-card click">
+          <a class="nav__cat-click" href="hygiene"><img src="img/hygiene-Icon-b.svg" alt="icon Hygiène">Hygiène</a>
+        </article>
+        <article class="comp-card click">
+          <a class="nav__cat-click" href="snack"><img src="img/snack-Icon-b.svg" alt="icon snack">Snack</a>
+        </article>
+        <article class="comp-card click">
+          <a class="nav__cat-click" href="acc"><img src="img/acc-Icon-b.svg" alt="icon Accéssoire">Acc.</a>
+        </article>
+        <article class="comp-card click">
+          <a class="nav__cat-click" href="sante"><img src="img/medical-Icon-b.svg" alt="icon médicale">Santé</a>
+        </article>
+        <article class="comp-card click">
+          <a class="nav__cat-click" href="divers"><img src="img/diver_Icon-b.svg" alt="icon divers">Divers</a>
+        </article>
+        </div>
       </div>
     </section>
-    <section class="composants">
+
+    <!-- COMPOSANT CARD PRODUIT -->
+     
+    <section >
       <h3 class="comp-titre">card produit</h3>
       <div class="fond">
         <article class="card-produit">
@@ -137,8 +184,14 @@
         <a class="ajout-panier" href="#"><img src="img/rupture-Icon.svg" alt="icon panier"> épuisé</a>
         <p class="info-dispo">En rupture</p>
       </article>
-
-
+      </div>
+    </section>
+    <section>
+      <h3>composant pop-up validation</h3>
+      <div class="fond">
+        <article><a href="valider"><img src="img/valide-Icon-b.svg" alt="icon validation">Produit ajouté au panier</a></article>
+         <article><a href="valider"><img src="img/valide-Icon-bleu.svg" alt="icon validation">Produit ajouté au panier</a></article>
+          <article><a href="valider"><img src="img/valide-Icon.svg" alt="icon validation">Produit ajouté au panier</a></article>
       </div>
     </section>
 
