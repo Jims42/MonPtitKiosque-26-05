@@ -329,3 +329,23 @@ width: 100px;
     text-transform: capitalize;
 
 }
+
+/* COMPOSANT POP-UP */
+
+.pop-up{
+  width: 160px;
+  height: 80px;
+  display: flex;
+  border: 1px solid black;
+  
+  
+  
+
+}
+.pop-up img{
+flex-shrink: 0;
+}
+.pop-up a{
+ 
+ flex-grow: 1;
+}
