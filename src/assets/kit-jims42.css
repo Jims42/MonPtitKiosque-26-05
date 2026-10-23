@@ -54,7 +54,7 @@ h5 .titre {
   display: flex;
   flex-wrap: wrap;
   background-color: #a8a8a8;
-  padding: 5px;
+  padding: 15px;
   gap: 30px;
 }
 
@@ -75,13 +75,10 @@ header {
 
 /* COULEURS */
 
-.couleur .fond {
-  flex-wrap: wrap;
-  gap: 15px;
-}
 .block-color {
   padding: 0.8rem 1.2rem;
   border-radius: var(--bordure-rond);
+  /* flex: 1; */
 }
 .principal {
   background-color: var(--color-main);
@@ -103,35 +100,53 @@ header {
   background-color: var(--color-pop);
   color: var(--color-bg);
 }
+.textFonce{
+   color: var(--color-txt);
+}
+.textClair{
+  color: var(--color-bg);
+}
+section #cardFond{
+  display: flex;
+}
+#co{
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
+#cardFond {
+  
+  text-align: center;
+}
 
 .color-preview {
-  min-width: 180px;
-  min-height: 180px;
-  margin: 15px;
+  width: 180px;
+  height: 180px;
+  padding: 5px;
   text-align: center;
   align-content: center;
 }
-.color-card:nth-child(1) .color-preview {
+/* .color-card:nth-child(1) .color-preview {
   background: var(--color-main);
   color: var(--color-bg);
-}
-.color-card:nth-child(2) .color-preview,
+} */
+/* .color-card:nth-child(2) .color-preview,
 .orange {
   background: var(--color-second-ico);
   color: var(--color-bg);
-}
-.color-card:nth-child(3) .color-preview {
+} */
+/* .color-card:nth-child(3) .color-preview {
   background: var(--color-second-acc);
   color: var(--color-bg);
-}
-.color-card:nth-child(4) .color-preview {
+} */
+/* .color-card:nth-child(4) .color-preview {
   background: var(--color-serv);
   color: var(--color-bg);
-}
-.color-card:nth-child(5) .color-preview {
+} */
+/* .color-card:nth-child(5) .color-preview {
   background: var(--color-pop);
   color: var(--color-bg);
-}
+} */
 
 .couleur section {
   padding: 20px;
@@ -139,7 +154,7 @@ header {
 }
 
 .color-card {
-  width: 100px;
+  
   flex: 1;
 }
 
